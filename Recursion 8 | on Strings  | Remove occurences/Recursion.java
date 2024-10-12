@@ -24,7 +24,7 @@
 // output:
 // bcde
 // ............................................................................................
-// public class Recursion {
+// public class Recursion {  // 2nd methode using substring.
 //     public static String remove(String str) {
 //         if(str.length() == 0) {
 //             return "";
@@ -48,7 +48,46 @@
 // output:
 // bcd
 // ............................................................................................
+// String + char --> String
 
+// public class Recursion {
+//     public static String reverse(String str, int idx) {
+//         if(idx == str.length()) {
+//             return "";
+//         }
+        
+//         String random = reverse(str, idx+1);
+//         char currChar = str.charAt(idx);
+        
+//         return random + currChar;
+        
+//     }
+    
+//     public static void main(String[] args) {
+//         System.out.print(reverse("hello", 0));
+//     }
+// }
+
+// output:
+// olleh
 // ............................................................................................
+// String + char --> String
 
+// public class Recursion {. // // 2nd methode using substring.
+//     public static String reverse(String str) {
+//         if(str.length() == 0) {
+//             return "";
+//         }
+        
+//         String random = reverse(str.substring(1));
+//         return random + str.charAt(0);
+//     }
+    
+//     public static void main(String[] args) {
+//         System.out.print(reverse("hello"));
+//     }
+// }
+
+// output:
+// olleh
 // ............................................................................................
