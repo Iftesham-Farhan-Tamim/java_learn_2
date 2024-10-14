@@ -52,11 +52,14 @@ public class Main {
         // System.out.print(ans); // false
         
         // if you don't specify class, you can put anything inside l
+        // ArrayList<Object> ll = new ArrayList<>(Arrays.asList("hello", 1, true));
+        // System.out.print(ll); // [hello, 1, true]
+
         ArrayList<Object> l = new ArrayList<>();
         l.add("pqres");
         l.add(1);
         l.add(true);
-        System.out.print(l); // [pqres, 1, true]
+        // System.out.print(l); // [pqres, 1, true]
         
     }
 }
