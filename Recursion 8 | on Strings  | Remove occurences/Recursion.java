@@ -1,4 +1,4 @@
-// package Recursion | GCD | Euclids Algorithm;
+// package Recursion |  on Strings  | Remove occurences;
 
 // public class Recursion {
 //     public static String remove(String s, int idx) {
@@ -73,7 +73,7 @@
 // ............................................................................................
 // String + char --> String
 
-// public class Recursion {. // // 2nd methode using substring.
+// public class Recursion { // 2nd methode using substring.
 //     public static String reverse(String str) {
 //         if(str.length() == 0) {
 //             return "";

@@ -31,6 +31,7 @@ public class Main {
             System.out.println(currAns);
             return;
         }
+        
         char curr = s.charAt(0);
         String remString = s.substring(1);
         printSSQ(remString, currAns + curr); // add curr
@@ -41,3 +42,6 @@ public class Main {
         printSSQ("abc", "");
     }
 }
+// ............................................................................................
+
+// ............................................................................................

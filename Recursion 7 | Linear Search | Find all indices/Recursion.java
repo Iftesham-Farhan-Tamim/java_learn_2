@@ -101,10 +101,55 @@
 
 // output:
 // 1 4 6
+// ............................................................................................
+// public class Recursion {
+//     public static String palindrome(String str, int idx) {
+//         if(idx == str.length()) {
+//             return "";
+//         }
+        
+//         String random = palindrome(str, idx+1);
+//         char currChar = str.charAt(idx);
+//         return random + currChar;
+//     }
+    
+//     public static void main(String[] args) {
+//         System.out.println(palindrome("dad", 0));
+        
+//         if(palindrome("dad", 0).equals("dad")) {
+//             System.out.print("Yes");
+//         } else {
+//             System.out.print("No");
+//         }
+//     }
+// }
 
+// output:
+// dad
+// Yes
+// ............................................................................................
+// public class Recursion {
+//     public static boolean palindrome(String str, int l, int r) {
+//         if(l>=r) {
+//             return true;
+//         }
+        
+//         return (str.charAt(l) == str.charAt(r) && palindrome(str, l+1, r-1));
+//     }
+    
+//     public static void main(String[] args) {
+//         String str = "dad";
+//         System.out.print(palindrome(str, 0, str.length()-1));
+//     }
+// }
 
+// output:
+// true
+// ............................................................................................
 
+// ............................................................................................
 
+// ............................................................................................
 
 
 
