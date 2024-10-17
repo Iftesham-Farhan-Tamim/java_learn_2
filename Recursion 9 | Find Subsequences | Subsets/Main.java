@@ -60,7 +60,7 @@
 // }
  
 // output:
-// (empty string)
+//  (empty string)
 // a
 // b
 // ab
@@ -95,7 +95,59 @@
 // bc
 // b
 // c
-// (empty string)
+//  (empty string)
 // ............................................................................................
+// public class Main {
+//     static void subsetSum(int[] a, int n, int idx, int sum) {
+//         if(idx == n) {
+//             System.out.println(sum);
+//             return;
+//         }
+        
+//         subsetSum(a, n, idx+1, sum + a[idx]);
+//         subsetSum(a, n, idx+1, sum);
+//     }
 
+//     public static void main(String[] args) {
+//         int[] a = {2, 4, 5};
+//         subsetSum(a, a.length, 0, 0);
+//     }
+// }
+
+// output:
+// 11
+// 6
+// 7
+// 2
+// 9
+// 4
+// 5
+// 0
 // ............................................................................................
+public class Main {
+    static void findSubsequences(int[] arr, int index, String current) {
+        
+        if (index == arr.length) {
+            System.out.println(current);
+            return;
+        }
+        
+        findSubsequences(arr, index + 1, current + arr[index] + " ");
+        findSubsequences(arr, index + 1, current);
+    }
+    
+    public static void main(String[] args) {
+        int[] arr = {2, 4, 5};
+        findSubsequences(arr, 0, "");
+    }
+}
+
+// output;
+// 2 4 5 
+// 2 4 
+// 2 5 
+// 2 
+// 4 5 
+// 4 
+// 5 
+//  (empty)
