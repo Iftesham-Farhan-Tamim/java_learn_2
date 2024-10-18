@@ -124,23 +124,23 @@
 // 5
 // 0
 // ............................................................................................
-public class Main {
-    static void printSSQ(int[] arr, int idx, String current) {
+// public class Main {
+//     static void printSSQ(int[] arr, int idx, String current) {
         
-        if (idx == arr.length) {
-            System.out.println(current);
-            return;
-        }
+//         if (idx == arr.length) {
+//             System.out.println(current);
+//             return;
+//         }
         
-        printSSQ(arr, idx + 1, current + arr[idx] + " ");
-        printSSQ(arr, idx + 1, current);
-    }
+//         printSSQ(arr, idx + 1, current + arr[idx] + " ");
+//         printSSQ(arr, idx + 1, current);
+//     }
     
-    public static void main(String[] args) {
-        int[] arr = {2, 4, 5};
-        printSSQ(arr, 0, "");
-    }
-}
+//     public static void main(String[] args) {
+//         int[] arr = {2, 4, 5};
+//         printSSQ(arr, 0, "");
+//     }
+// }
 
 // output;
 // 2 4 5 
