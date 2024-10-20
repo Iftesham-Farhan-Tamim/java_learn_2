@@ -2,15 +2,11 @@
 
 public class Main {
     public static int jump(int arr[], int idx) {
-        if(idx == arr.length-1) {
-            return 0;
-        }
+        if(idx == arr.length-1) return 0;
         
         int op1 = jump(arr, idx+1) + Math.abs(arr[idx+1] - arr[idx]);
         
-        if(idx == arr.length-2) {
-            return op1;
-        }
+        if(idx == arr.length-2) return op1;
         
         int op2 = jump(arr, idx+2) + Math.abs(arr[idx+2] - arr[idx]);
         
