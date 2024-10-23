@@ -506,12 +506,12 @@
 //         Scanner sc = new Scanner(System.in);
 //         System.out.print("Enter radius: ");
 //         int r = sc.nextInt();
+//         int rSquared = r * r;
         
 //         int x = 4, y = 4;  
 //         int x1 = 8, y1 = 8; 
         
 //         int oa = (x - x1) * (x - x1) + (y - y1) * (y - y1);
-//         int rSquared = r * r;
 
 //         if (oa == rSquared) {
 //             System.out.print("on the circle");
