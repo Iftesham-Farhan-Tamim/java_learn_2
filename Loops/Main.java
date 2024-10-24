@@ -497,7 +497,7 @@
 //     }
 // }
 // ............................................................................................
-// //Given the coordinates (x, y) of a center of a circle and its 
+// //Given the coordinates (x, y) of a center of a circle and its (using square)
 // radius, write a program which will determine whether a point lies 
 // inside the circle, on the circle or outside the circle.
 // import java.util.Scanner;
@@ -523,7 +523,52 @@
 //     }
 // }
 // ............................................................................................
+// //Given the coordinates (x, y) of a center of a circle and its (Math.sqrt function)
+// import java.util.Scanner;
+// public class Main {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter radius: ");
+//         int r = sc.nextInt();
+        
+//         int x = 4, y = 4;  
+//         int x1 = 8, y1 = 8; 
+        
+//         double distance = Math.sqrt((x1 - x) * (x1 - x) + (y1 - y) * (y1 - y));
+        
+//         if (distance == r) {
+//             System.out.print("on the circle");
+//         } else if (distance < r) {
+//             System.out.print("inside");
+//         } else {
+//             System.out.print("outside");
+//         }
+//     }
+// }
 // ............................................................................................
+// //Given a point (x, y), write a program to find out if it lies on the x-axis, y-axis 
+// or at the origin, viz. (0, 0). 
+// import java.util.Scanner;
+// public class Main {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+        
+//         System.out.print("Enter the x-coordinate: ");
+//         int x = sc.nextInt();
+//         System.out.print("Enter the y-coordinate: ");
+//         int y = sc.nextInt();
+        
+//         if (x == 0 && y == 0) {
+//             System.out.println("The point lies at the origin (0, 0).");
+//         } else if (x == 0) {
+//             System.out.println("The point lies on the y-axis.");
+//         } else if (y == 0) {
+//             System.out.println("The point lies on the x-axis.");
+//         } else {
+//             System.out.println("The point does not lie on any axis or the origin.");
+//         }
+//     }
+// }
 // ............................................................................................
 
 
