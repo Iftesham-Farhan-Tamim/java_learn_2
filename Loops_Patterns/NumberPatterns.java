@@ -1,6 +1,6 @@
 // package Loops_Patterns;
 
-// public class NumericalTriangularPattern {
+// public class NumberPatterns {
 //     public static void main(String[] args) {
         
 //         int n = 4;

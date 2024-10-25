@@ -1,5 +1,5 @@
-package Loops_Patterns;
+// package Loops_Patterns;
 
-public class Main {
+// public class Main {
     
-}
+// }
